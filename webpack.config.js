@@ -15,7 +15,7 @@ const plugins = [
         filename: '[name].[contenthash].css',
     }),
     new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './index.html',
     }),
 ];
 
@@ -41,7 +41,7 @@ module.exports = {
 
     output: {
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/',
+        publicPath: '/src/',
         assetModuleFilename: 'assets/[hash][ext][query]',
         clean: true,
     },

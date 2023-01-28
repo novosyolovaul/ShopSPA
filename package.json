@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "git+https://github.com/novosyolovaul/ShopSPA.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env SERVE=true webpack serve",
-    "build": "webpack",
+    "build": "webpack --mode=development",
     "build-prod": "webpack --mode=production",
-    "clean": "rd /s /q dist"
+    "clean": "rd /s /q dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "JavaScript",
@@ -25,6 +30,7 @@
     "babel-loader": "^9.1.2",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",

@@ -93,13 +93,30 @@ h6 {
 /*--------------------*/
 body {
   background-color: #fff;
+  font-family: "Lato", sans-serif;
+  color: #000;
 }
 
 .AYflHbvTHvHv6Q_Rsr_a {
   min-height: 100vh;
-  max-width: 1204px;
   background-color: #fff;
   margin: 0 auto;
+}
+
+@media (max-with: 1230px) {
+  .w8XR2IwzybnvlX1BE9jz {
+    max-width: 970px;
+  }
+}
+@media (max-with: 992px) {
+  .w8XR2IwzybnvlX1BE9jz {
+    max-width: 750px;
+  }
+}
+@media (max-with: 767px) {
+  .w8XR2IwzybnvlX1BE9jz {
+    max-width: none;
+  }
 }
 /*!**************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/common/PageSizeBut.js/PageSizeBut.module.scss ***!
@@ -107,10 +124,13 @@ body {
 .laaqdOVlER2Sy9fY4WAT {
   margin-right: 10px;
   padding-top: 5px;
+  color: #344050;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .XNNnJpNV0zDC83b8gSGH {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 /*!********************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/common/Pagination/Paginator.module.scss ***!
@@ -118,14 +138,57 @@ body {
 style {
   display: inline-block;
 }
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/common/Searching/Searching.module.scss ***!
+  \*******************************************************************************************************************************************************************************/
+.xKsvo0r69E4hHgD_pgzO {
+  width: 320px;
+  border: 1px solid #D8E2EE;
+  border-radius: 18px;
+  padding: 8px;
+}
+
+.Sj8hJ3HEs6o2uoyuE3xt {
+  font-size: 16px;
+}
+.Sj8hJ3HEs6o2uoyuE3xt:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #B6C2D2;
+  padding-left: 3px;
+}
+.Sj8hJ3HEs6o2uoyuE3xt::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #B6C2D2;
+  padding-left: 3px;
+}
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/common/Sort/Sort.module.scss ***!
+  \*********************************************************************************************************************************************************************/
+._DAhu4buext372mAg63A {
+  color: #344050;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+._DAhu4buext372mAg63A button {
+  margin-left: 30px;
+  color: #344050;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #fff;
+}
 /*!**************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Pages/Catalog/Catalog.module.scss ***!
   \**************************************************************************************************************************************************************************/
 .tutsI0rhvC9vFhhUXMl2 {
-  margin-top: 30px;
+  max-width: 1230px;
+  margin: 0 auto;
 }
 
 .MWniIScWuR0FsJuBPhwE {
+  margin-top: 20px;
   font-size: 22px;
   margin-bottom: 34px;
   font-weight: bold;
@@ -146,6 +209,13 @@ style {
   margin-top: 10px;
 }
 
+.bUKCdd4Kp9jbHCULcOzU {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
 .Cip09YHrRwRQUo4NtcFT {
   display: grid;
   grid-template-columns: 1fr 10fr 2.5fr 2.5fr 2.5fr;
@@ -154,6 +224,7 @@ style {
   grid-gap: 16px;
   gap: 16px;
   border-bottom: 1px #EDF2F8 solid;
+  color: #000;
 }
 
 .EOTM027B4RlLxYFYaGOQ {
@@ -171,79 +242,5 @@ style {
       justify-content: space-between;
   color: #000;
 }
-/*!******************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Pages/Product.module.scss ***!
-  \******************************************************************************************************************************************************************/
-.qXWDLgWqGdyXN_nH9IAz {
-  margin-top: 40px;
-}
 
-.RfTKT9NXb4pcnWLy3odv {
-  font-size: 16px;
-  padding: 5px;
-  color: #344050;
-  border: 1px #344050 solid;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 3px;
-}
-
-.FeyHjMtVWrcM9b84wFow {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  height: 120px;
-}
-
-.LIgzUrR0gbFQrVz3Ds3t {
-  display: inline;
-  background-color: #F63A3A;
-  color: #fff;
-  padding: 5px;
-}
-
-.s_Z9SVEQEijAdRZhwh7v {
-  max-width: 160px;
-  max-height: 80px;
-}
-
-.dM5BCjoKTARjlscfz6dq {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-}
-
-.j4N3AIxCTujeqfL6fGlg {
-  max-height: 415px;
-}
-
-.p3yAcQDJ3ttlMk2VIyWL {
-  display: grid;
-  grid-template-areas: "name name" "stars stars" "oldPrice newPrice";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 120px 55px 110px;
-  grid-gap: 20px;
-  gap: 20px;
-}
-
-.wXP9NAkja60U8E8PI153 {
-  grid-area: "name";
-}
-
-.MEEPRO_cTyKQGKyraAJN {
-  grid-area: "stars";
-}
-
-.tSPwkFReAXr8hmtG2FNu {
-  grid-area: "oldPrice";
-}
-
-.ehTZoqeD_zz4mC5chnLs {
-  grid-area: "newPrice";
-}
-
-/*# sourceMappingURL=main.1a3f1d26e61a289da1f3.css.map*/
+/*# sourceMappingURL=main.2cfcb3df0b90aa827bea.css.map*/
