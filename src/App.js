@@ -6,7 +6,7 @@ const Product = lazy(() => import("./Pages/Product/Product"))
 
 let App = (props) => {
     return (
-        <HashRouter basename={process.env.PUBLIC_URL} >
+        <HashRouter >
             <div className={s.wrapper}>
                 <Suspense>
                     <Routes >

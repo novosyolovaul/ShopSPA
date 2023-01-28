@@ -14598,9 +14598,7 @@ var Product = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.lazy)(function 
   return Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_mui_icons-material_StarBorderRounded_js-node_modules_mui_icons-material_-df0c43"), __webpack_require__.e("src_Pages_Product_Product_js")]).then(__webpack_require__.bind(__webpack_require__, /*! ./Pages/Product/Product */ "./src/Pages/Product/Product.js"));
 });
 var App = function App(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.HashRouter, {
-    basename: process.env.PUBLIC_URL
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.HashRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _App_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
     path: "/",
