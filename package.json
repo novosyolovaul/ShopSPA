@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://novosyolovaul.github.io/ShopSPA/",
+  "homepage": "https://novosyolovaul.github.io/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env SERVE=true webpack serve",
-    "build": "webpack --mode=development",
+    "build": "webpack",
     "build-prod": "webpack --mode=production",
     "clean": "rd /s /q dist",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "keywords": [
     "JavaScript",
