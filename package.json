@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://novosyolovaul.github.io/ShopSPA/",
+  "repository": {
+    "url": "git+https://github.com/novosyolovaul/ShopSPA.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env SERVE=true webpack serve",
-    "build": "webpack",
+    "build": "webpack --mode=development",
     "build-prod": "webpack --mode=production",
     "clean": "rd /s /q dist",
     "predeploy": "npm run build",
