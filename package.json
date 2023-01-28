@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env SERVE=true webpack serve",
-    "build": "webpack --mode=development",
+    "build": "webpack",
     "build-prod": "webpack --mode=production",
     "clean": "rd /s /q dist",
     "predeploy": "npm run build",
