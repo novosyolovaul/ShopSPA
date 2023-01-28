@@ -1,0 +1,249 @@
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/App.module.scss ***!
+  \********************************************************************************************************************************************************/
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: #fff;
+}
+
+.AYflHbvTHvHv6Q_Rsr_a {
+  min-height: 100vh;
+  max-width: 1204px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/common/PageSizeBut.js/PageSizeBut.module.scss ***!
+  \**************************************************************************************************************************************************************************************/
+.laaqdOVlER2Sy9fY4WAT {
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.XNNnJpNV0zDC83b8gSGH {
+  margin-bottom: 10px;
+}
+/*!********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/common/Pagination/Paginator.module.scss ***!
+  \********************************************************************************************************************************************************************************/
+style {
+  display: inline-block;
+}
+/*!**************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Pages/Catalog/Catalog.module.scss ***!
+  \**************************************************************************************************************************************************************************/
+.tutsI0rhvC9vFhhUXMl2 {
+  margin-top: 30px;
+}
+
+.MWniIScWuR0FsJuBPhwE {
+  font-size: 22px;
+  margin-bottom: 34px;
+  font-weight: bold;
+  color: #344050;
+}
+
+.vYRxoZJnIHOxGSsx0FPy {
+  background-color: #EDF2F8;
+  font-size: 13px;
+  display: grid;
+  grid-template-columns: 1fr 10fr 2.5fr 2.5fr 2.5fr;
+  grid-template-rows: 35px;
+  padding: 5px 22px;
+  grid-gap: 16px;
+  gap: 16px;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 10px;
+}
+
+.Cip09YHrRwRQUo4NtcFT {
+  display: grid;
+  grid-template-columns: 1fr 10fr 2.5fr 2.5fr 2.5fr;
+  grid-template-rows: 1fr;
+  padding: 17px 20px;
+  grid-gap: 16px;
+  gap: 16px;
+  border-bottom: 1px #EDF2F8 solid;
+}
+
+.EOTM027B4RlLxYFYaGOQ {
+  max-height: 40px;
+  max-width: 60px;
+  border-radius: 3px;
+}
+
+.Vjyxz14YNZX3_331ikvl {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  color: #000;
+}
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Pages/Product.module.scss ***!
+  \******************************************************************************************************************************************************************/
+.qXWDLgWqGdyXN_nH9IAz {
+  margin-top: 40px;
+}
+
+.RfTKT9NXb4pcnWLy3odv {
+  font-size: 16px;
+  padding: 5px;
+  color: #344050;
+  border: 1px #344050 solid;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+.FeyHjMtVWrcM9b84wFow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 120px;
+}
+
+.LIgzUrR0gbFQrVz3Ds3t {
+  display: inline;
+  background-color: #F63A3A;
+  color: #fff;
+  padding: 5px;
+}
+
+.s_Z9SVEQEijAdRZhwh7v {
+  max-width: 160px;
+  max-height: 80px;
+}
+
+.dM5BCjoKTARjlscfz6dq {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.j4N3AIxCTujeqfL6fGlg {
+  max-height: 415px;
+}
+
+.p3yAcQDJ3ttlMk2VIyWL {
+  display: grid;
+  grid-template-areas: "name name" "stars stars" "oldPrice newPrice";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 120px 55px 110px;
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.wXP9NAkja60U8E8PI153 {
+  grid-area: "name";
+}
+
+.MEEPRO_cTyKQGKyraAJN {
+  grid-area: "stars";
+}
+
+.tSPwkFReAXr8hmtG2FNu {
+  grid-area: "oldPrice";
+}
+
+.ehTZoqeD_zz4mC5chnLs {
+  grid-area: "newPrice";
+}
+
+/*# sourceMappingURL=main.1a3f1d26e61a289da1f3.css.map*/
