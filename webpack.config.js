@@ -42,7 +42,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: process.env.NODE_ENV === 'production'
-        ? '/https://github.com/novosyolovaul/ShopSPA.git/'
+        ? '/ShopSPA'
         : '/',
         assetModuleFilename: 'assets/[hash][ext][query]',
         clean: true,
