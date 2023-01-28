@@ -15,7 +15,7 @@ const plugins = [
         filename: '[name].[contenthash].css',
     }),
     new HtmlWebpackPlugin({
-        template: './index.html',
+        template: './src/index.html',
     }),
 ];
 
