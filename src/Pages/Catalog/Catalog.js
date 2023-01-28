@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import PageSizeBut from "../../common/PageSizeBut.js/PageSizeBut";
 import BasicPagination from "../../common/Pagination/Paginator";

@@ -153,17 +153,17 @@ var StyledRating = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_1__["default
   }
 });
 function Stars(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     color: "primary"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(StyledRating, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledRating, {
     value: props.stars,
     readOnly: true,
-    icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_StarRounded__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_StarRounded__WEBPACK_IMPORTED_MODULE_4__["default"], {
       sx: {
         fontSize: 40
       }
     }),
-    emptyIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_StarBorderRounded__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    emptyIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_StarBorderRounded__WEBPACK_IMPORTED_MODULE_5__["default"], {
       sx: {
         fontSize: 40
       }

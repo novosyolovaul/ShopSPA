@@ -14894,7 +14894,7 @@ function PageSizeBut(props) {
   var onChange = function onChange(_, value) {
     dispatch((0,_Redux_CatalogReduser__WEBPACK_IMPORTED_MODULE_2__.setPageSize)(value));
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_ToggleButtonGroup__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_ToggleButtonGroup__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: _PageSizeBut_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].button,
     exclusive: true,
     value: props.pageSize,
@@ -14903,11 +14903,11 @@ function PageSizeBut(props) {
       height: 30
     },
     selected: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _PageSizeBut_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].button_text
-  }, "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0442\u043E\u0432\u0430\u0440\u043E\u0432 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_ToggleButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0442\u043E\u0432\u0430\u0440\u043E\u0432 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_ToggleButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
     value: "3"
-  }, "3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_ToggleButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_ToggleButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
     value: "6"
   }, "6"));
 }
@@ -14941,12 +14941,12 @@ __webpack_require__.r(__webpack_exports__);
 function BasicPagination(props) {
   var count = Math.ceil(props.totalProductsCount / props.pageSize);
   var dispatsh = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Stack__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Stack__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       maxWidth: 250
     },
     classes: _Paginator_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].style
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Pagination__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Pagination__WEBPACK_IMPORTED_MODULE_5__["default"], {
     count: count,
     page: props.currentPage,
     onChange: function onChange(_, num) {
@@ -15052,10 +15052,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 function SortProducts(props) {
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_0___default().useEffect(function () {
     sortProduct(_, props.sort);
   }, []);
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState((0,lodash__WEBPACK_IMPORTED_MODULE_3__.cloneDeep)(props.data)),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default().useState((0,lodash__WEBPACK_IMPORTED_MODULE_3__.cloneDeep)(props.data)),
     _React$useState2 = _slicedToArray(_React$useState, 2),
     data = _React$useState2[0],
     _ = _React$useState2[1];
@@ -15079,29 +15079,29 @@ function SortProducts(props) {
     });
     updateList(sortedData, value);
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _Sort_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].sort
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: function onClick(e) {
       return sortProduct(e, "name");
     }
-  }, "\u043F\u043E \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, "\u043F\u043E \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: function onClick(e) {
       return sortProduct(e, 'value');
     }
-  }, "\u043F\u043E \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0430\u043C"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, "\u043F\u043E \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0430\u043C"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: function onClick(e) {
       return sortProduct(e, 'start_date');
     }
-  }, "\u043F\u043E \u0434\u0430\u0442\u0435 \u043D\u0430\u0447\u0430\u043B\u0430"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, "\u043F\u043E \u0434\u0430\u0442\u0435 \u043D\u0430\u0447\u0430\u043B\u0430"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: function onClick(e) {
       return sortProduct(e, 'end_date');
     }
-  }, "\u043F\u043E \u0434\u0430\u0442\u0435 \u043E\u043A\u043E\u043D\u0447\u0430\u043D\u0438\u044F"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, "\u043F\u043E \u0434\u0430\u0442\u0435 \u043E\u043A\u043E\u043D\u0447\u0430\u043D\u0438\u044F"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: function onClick(e) {
       return sortProduct(e, 'price_up');
     }
-  }, "\u043F\u043E \u0432\u043E\u0437\u0440\u0430\u0441\u0442\u0430\u043D\u0438\u044E \u0446\u0435\u043D\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, "\u043F\u043E \u0432\u043E\u0437\u0440\u0430\u0441\u0442\u0430\u043D\u0438\u044E \u0446\u0435\u043D\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: function onClick(e) {
       return sortProduct(e, 'price_down');
     }

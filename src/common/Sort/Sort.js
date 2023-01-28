@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { sortingProduct } from '../../Redux/CatalogReduser';
 import { useDispatch } from 'react-redux';
 import { cloneDeep } from 'lodash';
