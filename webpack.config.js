@@ -1,4 +1,4 @@
-const path = require('path');   
+const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
@@ -33,14 +33,14 @@ module.exports = {
         children: true
     },
     devServer: {
-        static: './build',
+        static: './dist',
         hot: true,
         historyApiFallback: true,
         
     },
 
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'dist'),
         publicPath: '/',
         assetModuleFilename: 'assets/[hash][ext][query]',
         clean: true,
