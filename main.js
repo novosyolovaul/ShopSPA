@@ -14648,7 +14648,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Catalog = function Catalog(props) {
+var Catalog = function Catalog() {
   var totalProductsCount = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.catalogPage.totalProductsCount;
   });
@@ -14715,6 +14715,9 @@ var CatalogList = function CatalogList(props) {
   var maxIndex = props.currentPage * props.pageSize;
   var minIndex = maxIndex - props.pageSize;
   var currentProducts = props.data.slice(minIndex, maxIndex);
+  var forDate = function forDate(date) {
+    return Intl.DateTimeFormat("ru").format(new Date(date));
+  };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, currentProducts.map(function (u, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
       to: "/product/" + (index + (props.currentPage - 1) * props.pageSize)
@@ -14733,9 +14736,9 @@ var CatalogList = function CatalogList(props) {
       className: _Catalog_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].catalog_list_views
     }, u.views), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: _Catalog_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].catalog_list_startDate
-    }, Intl.DateTimeFormat("ru").format(new Date(u.start_date))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, forDate(u.start_date)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: _Catalog_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].catalog_list_endDate
-    }, Intl.DateTimeFormat("ru").format(new Date(u.end_date)))));
+    }, forDate(u.end_date))));
   }));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CatalogList);
@@ -15064,19 +15067,31 @@ function SortProducts(props) {
     dispatch((0,_Redux_CatalogReduser__WEBPACK_IMPORTED_MODULE_1__.sortingProduct)(sortedData, sort));
   };
   var sortProduct = function sortProduct(_, value) {
-    console.log(value);
+    var forPrice = function forPrice(price) {
+      return Number(String(price).replace(/,/, '.'));
+    };
+    var sortedData;
     if (value == "price_up") {
       sortedData = data.sort(function (a, b) {
-        return (a.new_price || a.old_price) > (b.new_price || b.old_price) ? -1 : 1;
+        return forPrice(a.new_price || a.old_price) - forPrice(b.new_price || b.old_price);
       });
     } else if (value == "price_down") {
       sortedData = data.sort(function (a, b) {
-        return (a.new_price || a.old_price) > (b.new_price || b.old_price) ? 1 : -1;
+        return forPrice(b.new_price || b.old_price) - forPrice(a.new_price || a.old_price);
+      });
+    } else if (value == "start_date") {
+      sortedData = data.sort(function (a, b) {
+        return new Date(a.start_date) - new Date(b.start_date);
+      });
+    } else if (value == "end_date") {
+      sortedData = data.sort(function (a, b) {
+        return new Date(a.end_date) - new Date(b.end_date);
+      });
+    } else {
+      sortedData = data.sort(function (a, b) {
+        return a[value] > b[value] ? 1 : -1;
       });
     }
-    var sortedData = data.sort(function (a, b) {
-      return a[value] > b[value] ? 1 : -1;
-    });
     updateList(sortedData, value);
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -15087,7 +15102,7 @@ function SortProducts(props) {
     }
   }, "\u043F\u043E \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: function onClick(e) {
-      return sortProduct(e, 'value');
+      return sortProduct(e, 'views');
     }
   }, "\u043F\u043E \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0430\u043C"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: function onClick(e) {
