@@ -1,12 +1,12 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import s from './App.module.scss';
 import Catalog from "./Pages/Catalog/Catalog";
 const Product = lazy(() => import("./Pages/Product/Product"))
 
 let App = (props) => {
     return (
-        <BrowserRouter >
+        <HashRouter >
             <div className={s.wrapper}>
                 <Suspense>
                     <Routes >
@@ -17,7 +17,7 @@ let App = (props) => {
                 </Suspense>
 
             </div>
-        </BrowserRouter>
+        </HashRouter>
 
     )
 };
