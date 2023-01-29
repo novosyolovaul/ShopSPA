@@ -15,15 +15,27 @@ export default function SortProducts(props) {
     }
 
     let sortProduct = (_, value) => {
-        console.log(value)
+        let forPrice = (price) =>{
+            return Number((String(price)).replace(/,/, '.'))
+        }
+        let sortedData;
         if (value == "price_up") {
             sortedData = data.sort((a, b) =>
-                (a.new_price || a.old_price) > (b.new_price || b.old_price) ? -1 : 1)
+            forPrice(a.new_price || a.old_price) - forPrice(b.new_price || b.old_price))
         } else if (value == "price_down") {
             sortedData = data.sort((a, b) =>
-                (a.new_price || a.old_price) > (b.new_price || b.old_price) ? 1 : -1)
+                forPrice(b.new_price || b.old_price) - forPrice(a.new_price || a.old_price))
+        } else if (value == "start_date") {
+            sortedData = data.sort((a, b) =>
+                new Date(a.start_date) - new Date(b.start_date)
+            )
+        } else if (value == "end_date") {
+            sortedData = data.sort((a, b) =>
+                new Date(a.end_date) - new Date(b.end_date)
+            )
+        } else {
+            sortedData = data.sort((a, b) => a[value] > b[value] ? 1 : -1);
         }
-        let sortedData = data.sort((a, b) => a[value] > b[value] ? 1 : -1);
         updateList(sortedData, value);
     }
     return (
@@ -32,7 +44,7 @@ export default function SortProducts(props) {
                 Сортировать:
             </span>
             <button onClick={e => sortProduct(e, "name")} >по названию</button>
-            <button onClick={e => sortProduct(e, 'value')} >по просмотрам</button>
+            <button onClick={e => sortProduct(e, 'views')} >по просмотрам</button>
             <button onClick={e => sortProduct(e, 'start_date')} >по дате начала</button>
             <button onClick={e => sortProduct(e, 'end_date')} >по дате окончания</button>
             <button onClick={e => sortProduct(e, 'price_up')} >по возрастанию цены</button>
