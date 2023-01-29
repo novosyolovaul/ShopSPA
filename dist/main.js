@@ -77042,7 +77042,7 @@ module.exports = JSON.parse('[{"name":"Сухой корм для взрослы
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + "7b963ac525fe630e20e9" + ".css";
+/******/ 			return "" + chunkId + "." + "7661d5c8a5b8be925967" + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
