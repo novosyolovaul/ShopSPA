@@ -6,6 +6,9 @@ let CatalogList = (props) => {
     let maxIndex = props.currentPage * props.pageSize;
     let minIndex = maxIndex - props.pageSize;
     let currentProducts = props.data.slice(minIndex, maxIndex);
+    let forDate = (date) =>{
+        return Intl.DateTimeFormat("ru").format(new Date(date))
+    }
 
     return (
         <>
@@ -21,14 +24,13 @@ let CatalogList = (props) => {
                             {u.views}
                         </div>
                         <div className={s.catalog_list_startDate}>
-                            {Intl.DateTimeFormat("ru").format(new Date(u.start_date))}
+                            {forDate(u.start_date)}
                         </div>
                         <div className={s.catalog_list_endDate}>
-                            {Intl.DateTimeFormat("ru").format(new Date(u.end_date))}
+                            {forDate(u.end_date)}
                         </div>
                     </div>
                 </NavLink>
-
             )
             }
         </>

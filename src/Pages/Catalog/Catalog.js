@@ -7,7 +7,7 @@ import SortProducts from "../../common/Sort/Sort";
 import s from "./Catalog.module.scss";
 import CatalogList from "./CatalogList";
 
-let Catalog = (props) => {
+let Catalog = () => {
     const totalProductsCount = useSelector(state => state.catalogPage.totalProductsCount);
     const pageSize = useSelector(state => state.catalogPage.pageSize);
     const currentPage = useSelector(state => state.catalogPage.currentPage);

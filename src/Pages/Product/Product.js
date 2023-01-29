@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 import s from "./Product.module.scss"
 import ProductHeader from "./ProductHeader";
-import ProductInfo from "./ProductInfo";
+import ProductInfo from "./ProductInfo/ProductInfo";
 
 
 let Product = () => {
@@ -16,7 +16,7 @@ let Product = () => {
         <>
             <div className={s.product}>
                 <button className={s.buttonGoBack} onClick={() => navigate(-1)}>
-                    Назад</button>
+                Назад</button>
                 <ProductHeader id={id} value={value} />
                 <div className={s.product_body}>
                     <img src={value[id].image_url} className={s.product_body_img}></img>
