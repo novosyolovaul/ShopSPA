@@ -41,7 +41,7 @@ module.exports = {
 
     output: {
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/ShopSPA',
+        publicPath: '/ShopSPA/',
         assetModuleFilename: 'assets/[hash][ext][query]',
         clean: true,
     },
