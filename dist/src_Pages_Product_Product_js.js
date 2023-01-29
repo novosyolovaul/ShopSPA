@@ -138,8 +138,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
 /* harmony import */ var _mui_material_Rating__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Rating */ "./node_modules/@mui/material/Rating/Rating.js");
-/* harmony import */ var _mui_icons_material_StarBorderRounded__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/icons-material/StarBorderRounded */ "./node_modules/@mui/icons-material/StarBorderRounded.js");
-/* harmony import */ var _mui_icons_material_StarRounded__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/icons-material/StarRounded */ "./node_modules/@mui/icons-material/StarRounded.js");
+/* harmony import */ var _node_modules_mui_icons_material_StarBorderRounded__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../node_modules/@mui/icons-material/StarBorderRounded */ "./node_modules/@mui/icons-material/StarBorderRounded.js");
+/* harmony import */ var _node_modules_mui_icons_material_StarRounded__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../node_modules/@mui/icons-material/StarRounded */ "./node_modules/@mui/icons-material/StarRounded.js");
 /* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/styles */ "./node_modules/@mui/material/styles/styled.js");
 
 
@@ -158,12 +158,12 @@ function Stars(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledRating, {
     value: props.stars,
     readOnly: true,
-    icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_StarRounded__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_node_modules_mui_icons_material_StarRounded__WEBPACK_IMPORTED_MODULE_4__["default"], {
       sx: {
         fontSize: 40
       }
     }),
-    emptyIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_StarBorderRounded__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    emptyIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_node_modules_mui_icons_material_StarBorderRounded__WEBPACK_IMPORTED_MODULE_5__["default"], {
       sx: {
         fontSize: 40
       }
